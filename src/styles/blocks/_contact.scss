@@ -117,6 +117,7 @@
   }
 
   & :nth-child(2n + 1) {
+    display: block;
     margin: 0 0 8px;
     font-family: $main-font;
     font-weight: 400;
@@ -125,10 +126,13 @@
   }
 
   & :nth-child(2n + 2) {
+    display: block;
     margin: 0 0 24px;
     font-family: $main-font;
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
+    text-decoration: none;
+    color: #fff;
   }
 }
