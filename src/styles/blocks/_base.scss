@@ -1,0 +1,40 @@
+.page {
+  font-family: Poppins, sans-serif;
+  line-height: 140%;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  color: #fff;
+  user-select: none;
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
+
+  &__body {
+    margin: 0;
+  }
+
+  &__menu {
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+
+    &:target {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+
+.welcome--paddings {
+  padding: 24px 20px 88px;
+
+  @include on-tablet {
+    padding: 36px 72px 130px;
+  }
+
+  @include on-laptop {
+    padding: 36px 120px 203px;
+  }
+}
