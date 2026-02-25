@@ -65,5 +65,10 @@
   &__logo {
     display: flex;
     cursor: pointer;
+    transition: transform $anim-delay ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }

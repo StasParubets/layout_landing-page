@@ -30,6 +30,11 @@
   height: 130px;
   background-position: center;
   background-size: cover;
+  transition: transform $anim-delay ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   &--long {
     @include on-tablet {

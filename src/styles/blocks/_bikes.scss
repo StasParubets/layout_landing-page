@@ -35,16 +35,17 @@
       grid-column: span 4;
       margin-bottom: 0;
     }
-
-    &:hover {
-      transform: scale(1.2);
-    }
   }
 
   &__img {
     width: 100%;
     height: 228px;
     margin-bottom: 32px;
+    transition: transform $anim-delay ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @include on-tablet {
       height: 316px;
