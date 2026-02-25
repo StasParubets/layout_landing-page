@@ -39,3 +39,14 @@
     }
   }
 }
+
+.top-bar__logo {
+  transition:
+    transform $anim-delay ease,
+    opacity $anim-delay ease;
+
+  &:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}

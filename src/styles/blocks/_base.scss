@@ -18,13 +18,20 @@
     position: fixed;
     inset: 0;
     opacity: 0;
+    z-index: 100;
+    background-color: #c2c2c2;
+    visibility: hidden;
     pointer-events: none;
     transform: translateX(-100%);
-    transition: transform $anim-delay;
+    transition:
+      transform $anim-delay ease-in-out,
+      opacity $anim-delay ease,
+      visibility $anim-delay;
 
     &:target {
       opacity: 1;
       pointer-events: all;
+      visibility: visible;
       transform: translateX(0);
     }
   }

@@ -4,6 +4,14 @@
   height: 24px;
   background-size: cover;
   background-position: center;
+  transition:
+    transform $anim-delay ease,
+    filter $anim-delay ease;
+
+  &:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
 
   @include on-tablet {
     width: 32px;

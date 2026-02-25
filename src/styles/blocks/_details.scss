@@ -109,6 +109,14 @@
   font-weight: 700;
   font-size: 16px;
 
+  &,
+  .contact-us__form input[type='submit'] {
+    transition:
+      transform $anim-delay ease,
+      box-shadow $anim-delay ease,
+      background-color $anim-delay ease;
+  }
+
   @include on-tablet {
     grid-column: 2 / -2;
   }
@@ -118,7 +126,9 @@
   }
 
   &:hover {
+    transform: translateY(-2px);
     box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.4);
+    background-color: #f0f0f0;
   }
 
   &:active {
