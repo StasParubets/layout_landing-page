@@ -7,6 +7,5 @@ if (contactForm) {
   contactForm.addEventListener('submit', (evt) => {
     evt.preventDefault();
     contactForm.reset();
-    alert('Дякуємо! Ваше повідомлення надіслано.');
   });
 }
