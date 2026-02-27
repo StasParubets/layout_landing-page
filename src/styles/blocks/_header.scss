@@ -18,8 +18,15 @@
     background-image: url(../images/header-bg--high-quality.png);
   }
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
   &__title {
-    margin-top: 294px;
+    margin-top: auto;
     margin-bottom: 0;
     font-family: $main-font;
     font-weight: 700;
@@ -29,12 +36,10 @@
     text-align: center;
 
     @include on-tablet {
-      margin-top: 342px;
       font-size: 64px;
     }
 
     @include on-laptop {
-      margin-top: 336px;
       font-size: 80px;
     }
   }

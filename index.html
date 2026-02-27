@@ -26,7 +26,7 @@
 
     <!--#region HEADER-->
     <header class="header">
-      <div class="welcome--paddings">
+      <div class="welcome--paddings header__container">
         <div class="top-bar">
           <a href="#" class="top-bar__logo">
             <img src="./src/images/Logo.svg" alt="MyBike logo"
@@ -170,7 +170,8 @@
       <h2 class="contact-us__title" id="contact-us">Contact us</h2>
 
       <form action="#" method="get"
-      class="contact-us__form" id="contact-form">
+      class="contact-us__form" onsubmit="this.reset();
+      return false">
         <input type="text" name="name"
          id="name" required
          placeholder="Name">

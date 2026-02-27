@@ -6,7 +6,7 @@ textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus {
   -webkit-text-fill-color: #292929;
   transition: background-color 5000s ease-in-out 0s;
-  box-shadow: 0 0 0px 1000px #f8f8fa inset;
+  box-shadow: 0 0 0 1000px #f8f8fa inset;
 }
 
 .page {
@@ -49,6 +49,7 @@ textarea:-webkit-autofill:focus {
 }
 
 .welcome--paddings {
+  height: 100%;
   padding: 24px 20px 88px;
 
   @include on-tablet {
