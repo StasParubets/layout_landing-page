@@ -135,4 +135,21 @@
     text-decoration: none;
     color: #fff;
   }
+
+  a {
+    display: inline-block;
+    color: inherit;
+    transition:
+      color $anim-delay ease,
+      transform $anim-delay ease;
+
+    &:hover {
+      color: #777;
+      transform: translateX(5px);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
 }
